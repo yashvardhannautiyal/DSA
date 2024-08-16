@@ -1,36 +1,76 @@
-//import java.util.Scanner;
-
-public class pattern {
-//
-//    class print1{
-//        int num;
-//
-//        print1(int num) {
-//            this.num = num;
-//            for(int i = 0;i<num;i++){
-//                System.out.println(" ");
-//                for (int j = 0; j < num; j++) {
-//                    System.out.print("*");
-//                }
+import java.util.Scanner;
+//        Pattern 1
+//     ****
+//     ****
+//     ****
+//     ****
+//class pattern1{
+//    pattern1(int n){
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j <n; j++) {
+//                System.out.print("* ");
 //            }
+//        System.out.println(" ");
 //        }
+//    }
+//}
 
 
-        public class patterns {
-            public static void main(String[] args) {
 
-                //  1.****
-//            ****
-//            ****
-//            ****
-//            ****
-//                Scanner sc = new Scanner(System.in);
-//                System.out.print("Enter n : ");
-//                int n = sc.nextInt();
-//                print1 p = new print1(n);
-                System.out.println("hello");
+//        Pattern 2
+//        *
+//        * *
+//        * * *
+//        * * * *
+//class pattern2{
+//    pattern2(int n){
+//        for(int i=0;i<n;i++){
+//            for(int j=0; j<=i; j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println(" ");
+//        }
+//    }
+//}
+
+
+
+//  pattern 3
+//    1
+//    1 2
+//    1 2 3
+//    1 2 3 4
+    class pattern3{
+        pattern3(int n){
+            for(int i=1; i<=n; i++){
+                for(int j=1; j<=i; j++){
+                    System.out.print(j + " ");
+                }
+                System.out.println(" ");
             }
         }
+}
+
+
+
+
+
+
+
+public class pattern{
+    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in); //input
+//        System.out.print("Enter num : ");
+//        int n = sc.nextInt();
+//        pattern1 a = new pattern1(4);
+//        pattern2 b = new pattern2(4);
+        pattern3 c = new pattern3(5);
+
+
+
+
+//
 
 
     }
+}
