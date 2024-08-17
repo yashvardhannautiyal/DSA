@@ -111,29 +111,126 @@
 //              * * *
 //            * * * * *
 //          * * * * * * *
-class pattern7{
-    pattern7(int n){
-        for (int i=0; i<n; i++) {
-//            space
-            for (int j = 0; j < n - i - 1; j++) {
-                System.out.print(" ");
-            }
-//                stars
-            for (int k = 0; k < 2 * i + 1; k++) {
+//class pattern7{
+//    pattern7(int n){
+//        for (int i=0; i<n; i++) {
+////            space
+//            for (int j = 0; j < n - i - 1; j++) {
+//                System.out.print(" ");
+//            }
+////                stars
+//            for (int k = 0; k < 2 * i + 1; k++) {
+//                System.out.print("* ");
+//            }
+////                    space
+//            for (int l = 0; l < n - i - 1; l++) {
+//                System.out.print(" ");
+//            }
+//
+//            System.out.println(" ");
+//
+//        }
+//}}
+
+
+//pattern 8
+//* * * * * * * * *
+//  * * * * * * *
+//    * * * * *
+//      * * *
+//        *
+//class pattern8{
+//    pattern8(int n){
+//        for (int i = 0; i < n; i++) {
+////            space
+//            for (int j = 0; j <i; j++) {
+//                System.out.print(" ");
+//            }
+//            stars
+//            for (int j = 0; j <2*n - (2*i+1); j++) {
+//                System.out.print("*");
+//            }
+////            space
+//            for (int j = 0; j <i; j++) {
+//                System.out.print(" ");
+//            }
+//            System.out.println(" ");
+//        }
+//    }
+//}
+
+
+
+//pattern 9
+//            *             space = n-i-1; stars = 2*n+1; space = n-i-1
+//          * * *
+//        * * * * *
+//      * * * * * * *
+//        * * * * *
+//          * * *
+//            *
+//class pattern9{
+//    pattern9(int n){
+////        upper part
+//        for (int i =0; i<n; i++){
+//            for (int j=0; j< n-i-1; j++){
+//                System.out.print(" ");//space
+//            }
+//            for (int j = 0; j <2*i+1; j++) {
+//                System.out.print("*");//stars
+//            }
+//            for (int j = 0; j <n-i-1; j++) {
+//                System.out.print(" ");//space
+//            }
+//            System.out.println(" ");
+//        }
+//
+////        lower part
+//        for (int i = 0; i <n; i++) {
+//            for (int j = 0; j <i; j++) {//space
+//                System.out.print(" ");
+//            }
+//            for (int j = 0; j <2*n-(2*i+1); j++) {
+//                System.out.print("*");//stars
+//            }
+//            for (int j = 0; j <i; j++) {
+//                System.out.print(" ");//space
+//            }
+//            System.out.println(" ");
+//
+//        }
+//    }
+//}
+
+
+
+//pattern 10
+//*
+//* *
+//* * *
+//* * * *
+//* * *
+//* *
+//*
+class pattern10{
+    pattern10(int n){
+//        upper part
+        for (int i = 0; i <n; i++) {
+            for (int j = 0; j <=i; j++) {
                 System.out.print("* ");
             }
-//                    space
-            for (int l = 0; l < n - i - 1; l++) {
-                System.out.print(" ");
+            System.out.println(" ");
+        }
+//        lower part
+        for (int i = 1; i <n; i++) {
+            for (int j = i; j <n; j++) {
+                System.out.print("* ");
             }
-
             System.out.println(" ");
 
         }
-}}
-
-
-
+    }
+}
 
 
 public class pattern {
@@ -147,8 +244,10 @@ public class pattern {
 //        pattern4 d = new pattern4(5);
 //        pattern5 e = new pattern5(5);
 //        pattern6 f = new pattern6(5);
-        pattern7 g = new pattern7(5);
-
+//        pattern7 g = new pattern7(5);
+//        pattern8 h = new pattern8(5);
+//        pattern9 i = new pattern9(4);
+        pattern10 j = new pattern10(7);
 
 
     }
