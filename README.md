@@ -1,2 +1,2 @@
 # Striver's DSA
-Sharpening DSA skills with consistent practice
+Striver's sheet for developing problem solving.
