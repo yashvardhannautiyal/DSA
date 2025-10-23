@@ -8,21 +8,18 @@ using namespace std;
 void explainVectors(){
     // syntax: vector<data_type> vector_name;
 
-    vector<int> v; // initalizes empty container - {}
+    vector<int> v;
 
-    v.push_back(1); // pushes 1 to the back of the vector - {1}
-    // push_back() takes an existing object and copies (or moves) it into the container.
+    v.push_back(1); 
 
-    v.emplace_back(2); // similar to push_back but faster - {1, 2}
-    // emplace_back() constructs the object directly inside the vector — no copy or move.
+    v.emplace_back(2); 
 
     vector<pair<int, int>> vecPair;
 
     vecPair.push_back({1,2}); // ({1,2})
     vecPair.emplace_back(3,4); // it assumes it is in pair and directly places it in pair form -> ({1,2}, {3,4})
 
-    // vector<int> vecName(Size, value);
-    // although we define the size of the vector, it is still dynamic and can grow beyond this size
+    
 
     vector<int> v2(5,100); // initializes 5 elements with value 100 -> {100, 100, 100, 100, 100}
 

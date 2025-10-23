@@ -1,12 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// pairs in C++
-// pair is a collection from <utility> header file that holds two values of same or different data types
-
 int main()
 {
-    // synatx: pair<data_type1, data_type2> pair_name;
     pair<int, int> p = {1, 3};
     cout << p.first << " " << p.second << endl; // 1 3
 
