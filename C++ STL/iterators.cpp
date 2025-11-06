@@ -4,21 +4,25 @@ using namespace std;
 // ITERATORS 
 void explainIterators(){
     vector<int> v = {10, 20, 30, 40};
-    // iterator is an object which points to a specific location in the container
-    // syntax -> 
-    // vector<int> :: iterator iterator_name = v.func();
 
-    vector<int> :: iterator it = v.begin(); // points to first element of vector -> 10
-    cout << *(it) << endl; // prints 10     | *(it) denotes value at iterator it
+    vector<int> :: iterator it0 = v.begin(); // points to first element
+    
+    cout << *(it0) << endl; // prints 10      
 
-    it++; // points to next element of vector -> 20
-    cout << *(it) << endl; // prints 20
+    it0++; //  20
+    cout << *(it0) << endl; //  20
 
-    it = it+2; // points to 40
-    cout << *(it) << endl; // prints 40
+    it0 = it0+2; //  40
+    cout << *(it0) << endl; //  40
 
-    vector<int> :: iterator it = v.end(); // points to the element right after the last element of the vector
-    it--; // now it points to the last element of the vector
+    vector<int> :: iterator it1 = v.end(); 
+    it1--;
+
+
+    // reverse end begin not used much but for knowledge purpose
+    vector<int> :: reverse_iterator it2 = v.rend(); // reverse of the iterator + points to the end of the vector in reverse that is 10 here!
+
+    vector<int> :: reverse_iterator it3 = v.rbegin(); //reverse of the iterator +  points to the first element of the reverse vector that is 40 here!
 
 }
 
