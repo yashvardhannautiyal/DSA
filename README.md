@@ -1,2 +1,3 @@
-# Striver's DSA
-Striver's sheet for developing problem solving.
+# DSA
+
+Practicing and enhancing DSA problem solving skills following Striver's sheet.
