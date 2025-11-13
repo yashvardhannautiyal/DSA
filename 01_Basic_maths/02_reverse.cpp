@@ -8,13 +8,16 @@ int main(){
     cout << "Enter number : ";
     cin >> n;
     
+    int sign = (n < 0) ? -1 : 1;  // store sign separately
+    n = abs(n);  // work with positive value
+    
     while(n>0){
         int lastN = n%10;
         revN = (revN * 10) + lastN;
         n = n/10;
     }
 
-    cout << "Reverse number : " << revN << endl;
+    cout << "Reverse number : " << revN * sign << endl;
 
     return 0;
 }
