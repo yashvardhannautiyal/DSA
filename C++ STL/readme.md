@@ -39,6 +39,7 @@ Syntax : `synatx: pair<data_type1, data_type2> pair_name;`
 ## Containers
 
 Container is a data structure that stores a collection of elements.
+These include : Vectors, Lists, Deque, Stack, Queue, Priority Queue, Sets, Multi sets, Unordered sets, Maps, Multi maps, Unordered maps, 
 
 1. Vectors <br>
    vectors are dynamic array which means we can add or modify the vector dynamically as per the need.<br>
@@ -60,6 +61,8 @@ although we define the size of the vector, it is still dynamic and can grow beyo
 `vector<int> v4(v2);` : copies v2 into v4.
 
 Accessing elements of vector : `v2[2]` or `v2.at(2)`.
+
+
 
 # Iterators
 
