@@ -6,7 +6,6 @@ using namespace std;
 // 1. VECTORS
 void explainVectors()
 {
-    // syntax: vector<data_type> vector_name;
 
     vector<int> v;
 
