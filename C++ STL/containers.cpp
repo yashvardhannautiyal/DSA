@@ -91,9 +91,6 @@ void explainLists()
 }
 
 // 3. DEQUE
-// deque - double ended queue
-// it has complexity of O(1) for insertion and deletion at both ends
-// in comparision of vector which has O(n) complexity for insertion and deletion at front deque is more efficient
 void explainDeque()
 {
     deque<int> dq;

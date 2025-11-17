@@ -45,22 +45,58 @@ These include : Vectors, Lists, Deque, Stack, Queue, Priority Queue, Sets, Multi
    vectors are dynamic array which means we can add or modify the vector dynamically as per the need.<br>
    Syntax : `vector<data_type> vector_name;`
 
-`vector<int> v;` : initalizes empty container - {} named v.
+    `vector<int> v;` : initalizes empty container - {} named v.
 
-`v.push_back(1);` : pushes 1 to the back of the vector - {1} <br>
-it takes an existing object and copies (or moves) it into the container.
+    `v.push_back(1);` : pushes 1 to the back of the vector - {1} <br>
+    it takes an existing object and copies (or moves) it into the container.
 
-`v.emplace_back(2);` : similar to push_back but faster - {1, 2} <br>
-constructs the object directly inside the vector — no copy or move.
+    `v.emplace_back(2);` : similar to push_back but faster - {1, 2} <br>
+    constructs the object directly inside the vector — no copy or move.
 
-` vector<int> v(5,100);` : initializes 5 elements with value 100 -> {100, 100, 100, 100, 100} <br>
-although we define the size of the vector, it is still dynamic and can grow beyond this size.
+    `vector<int> v(5,100);` : initializes 5 elements with value 100 -> {100, 100, 100, 100, 100} <br>
+    although we define the size of the vector, it is still dynamic and can grow beyond this size.
 
-`vector<int> v3(5);` : initializes 5 elements with default value 0 -> {0, 0, 0, 0, 0}
+    `vector<int> v3(5);` : initializes 5 elements with default value 0 -> {0, 0, 0, 0, 0}
 
-`vector<int> v4(v2);` : copies v2 into v4.
+    `vector<int> v4(v2);` : copies v2 into v4.
 
-Accessing elements of vector : `v2[2]` or `v2.at(2)`.
+    Accessing elements of vector : `v2[2]` or `v2.at(2)`.
+
+  <br>
+
+2. LISTS <br>
+    lists are implemented using doubly linked list.<br>
+    Syntax : `list<int> ls;`
+
+    `ls.push_front(2)` : insert an element at the front of the list. <br>
+    takes an existing object and copies or moves it into the list. <br>
+
+    `ls.emplace_front(2)` : insert element at the front.
+
+    rest functions same as vectors : 
+    `begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend() `
+
+<br>
+
+3. DEQUE <br>
+    deque - double ended queue <br>
+    it has complexity of O(1) for insertion and deletion at both ends <br>
+    in comparision of vector which has O(n) complexity for insertion and deletion at front deque is more efficient
+
+    Syntax : `deque<int> dq;`
+
+    `dq.pop_front();` : removes 5 -> {4,1,2}
+
+    `dq.pop_back();` : removes 2 -> {4,1}
+
+    rest functions same as vectors : 
+    `push_back(), push_front(), emplace_back(), emplace_front(), begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend() `
+
+    
+
+
+
+    
 
 
 
