@@ -92,6 +92,35 @@ These include : Vectors, Lists, Deque, Stack, Queue, Priority Queue, Sets, Multi
     rest functions same as vectors : 
     `push_back(), push_front(), emplace_back(), emplace_front(), begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend() `
 
+
+4. STACK <br>
+  LIFO (last in first out). <br>
+  stack have time complexity big O(1) for push(), pop(), top(); that means these operations are done in constant time. <br>
+  Syntax : `stack<int> st;` <br>
+  Functions : `push(), emplace(), pop(), empty(), swap()`
+
+
+5.  QUEUE <br>
+  FIFO (first in first out) <br>
+  complexity is big O(1) and is constant in time.<br>
+  Syntax : `queue<int> q;` <br>
+  Functions : `push(), emplace(), back(), front() `
+
+  6. PRIORITY QUEUE <br>
+ priority queue as the name suggests it is queued based on priority <br>
+  the largest element is given highest priority and stays at the top either it is integer, character or any other data type <br>
+ time complexity: 
+ push() - log(n)<br> 
+ pop() - log(n) <br>
+ top() - O(1)
+ <br>
+ MAX HEAP : it shows the largest element on the top <br>
+ Syntax : `priority_queue<int> pq;` <br>
+ MIN HEAP : it shows the smallest element on the top <br>
+`priority_queue<int, vector<int>, greater<int>> pq2;`
+<br>
+Functions : similar functions push(), pop(), size(), empty(), swap()
+
     
 
 

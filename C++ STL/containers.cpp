@@ -110,9 +110,7 @@ void explainDeque()
     // begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend()
 }
 
-// 4. STACK - LIFO (last in first out)
-// stack have time complexity big O(1) for push(), pop(), top()
-// that means these operations are done in constant time
+// 4. STACK
 void explainStack()
 {
     stack<int> st;
@@ -132,8 +130,7 @@ void explainStack()
     st.swap(st2); // swaps st and st2
 }
 
-// 5. QUEUE - FIFO (first in first out)
-// complexity is big O(1) and is constant in time
+// 5. QUEUE 
 void explainQueue()
 {
     queue<int> q;
@@ -154,11 +151,7 @@ void explainQueue()
 }
 
 // 6. PRIORITY QUEUE
-// priority queue as the name suggests it is queued based on priority
-// the largest element is given highest priority and stays at the top either it is integer, character or any other data type
-// time complexity for push() - log(n)
-// pop() - log(n)
-// top() - O(1)
+
 
 void explainPQ()
 {
@@ -174,7 +167,6 @@ void explainPQ()
 
     pq.pop(); // removes 10 -> {8,5,2}
 
-    // similar functions push(), pop(), size(), empty(), swap()
 
     // MIN HEAP : it shows the smallest element on the top
 
