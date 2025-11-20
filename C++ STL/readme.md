@@ -119,9 +119,48 @@ These include : Vectors, Lists, Deque, Stack, Queue, Priority Queue, Sets, Multi
  MIN HEAP : it shows the smallest element on the top <br>
 `priority_queue<int, vector<int>, greater<int>> pq2;`
 <br>
-Functions : similar functions push(), pop(), size(), empty(), swap()
+Functions : similar functions `push(), pop(), size(), empty(), swap() `
 
-    
+ 
+ 7. SETS <br>
+sets are containers that store elements in sorted + unique order <br>
+if we insert duplicate elements, then also only one instance will be stored <br>
+it is implemented using balanced binary search tree (BST) <br>
+complexity for insertion, deletion, search is O(log n) as it is implemented using balanced BST (binary search tree)
+<br>
+Syntax : `set<int> st;` <br>
+Functions: `insert(), emplace(), find(), count(), erase(), lower_bound(), upper_bound()`  
+<br>
+
+8. MULTI SETS <br>
+multi sets are similar to sets but they allow duplicate elements <br>
+the elements are stored in sorted order <br>
+if we insert duplicate elements, then all instances will be stored <br>
+Syntax : `multiset<int> ms;`
+Functions : same as sets <br>
+
+9. Unordered SETS <br>
+unordered sets are similar to sets but they do not store elements in sorted order <br>
+store only unique elements <br>
+complexity for insertion, deletion, search is O(1) on average case and O(n) in worst case <br>
+lower bound and upper bound functions are not applicable for unordered sets <br>
+Syntax : ` unordered_set<int> us; `<br>
+Functions : same as sets <br>
+
+
+10. MAPS <br>
+maps are associative containers that store elements in key-value pairs <br>
+keys are unique and are used to access the corresponding values. Elements stored can be same for some other key <br>
+maps are implemented using balanced binary search tree (BST). Stores value in sorted order of keys <br>
+Syntax :  `map<key_data_type, value_data_type> map_name;`  key and value can be of any data type <br>
+Functions : `begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()`
+<br>
+
+
+11. MULTI MAPS <br>
+// multi maps are similar to maps but they allow duplicate keys
+// implemented using balanced binary search tree (BST)
+// stores elements in sorted order of keys
 
 
 
@@ -142,3 +181,4 @@ syntax : `vector<int> :: iterator iterator_name = v.func();`
 
 `vector<int> :: iterator it = v.end();` : points to the element right after the last element of the vector. <br>
 `it--` now it points to the last element of the vector.
+

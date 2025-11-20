@@ -181,10 +181,6 @@ void explainPQ()
 }
 
 // 7. SETS
-// sets are containers that store elements in sorted + unique order
-// if we insert duplicate elements, then also only one instance will be stored
-// it is implemented using balanced binary search tree (BST)
-// complexity for insertion, deletion, search is O(log n) as it is implemented using balanced BST (binary search tree)
 void explainSets()
 {
     set<int> st;
@@ -223,9 +219,6 @@ void explainSets()
 }
 
 // 8. MULTI SETS
-// multi sets are similar to sets but they allow duplicate elements
-// the elements are stored in sorted order
-// if we insert duplicate elements, then all instances will be stored
 void explainMultiSets()
 {
     multiset<int> ms;
@@ -237,7 +230,6 @@ void explainMultiSets()
     ms.insert(2);  // {1,1,1,2,2}
     ms.insert(3);  // {1,1,1,2,2,3}
 
-    // functions: begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()
 
     auto it = ms.find(2); // returns iterator to the first occurrence of 2
 
@@ -253,10 +245,6 @@ void explainMultiSets()
 }
 
 // 9. Unordered SETS
-// unordered sets are similar to sets but they do not store elements in sorted order
-// store only unique elements
-// complexity for insertion, deletion, search is O(1) on average case and O(n) in worst case
-// lower bound and upper bound functions are not applicable for unordered sets
 void explainUnorderedSets()
 {
     unordered_set<int> us;
@@ -272,11 +260,6 @@ void explainUnorderedSets()
 }
 
 // 10. MAPS
-// maps are associative containers that store elements in key-value pairs
-// keys are unique and are used to access the corresponding values
-// elements stored can be same for some other key
-// maps are implemented using balanced binary search tree (BST)
-// stores value in sorted order of keys
 void explainMaps()
 {
 
