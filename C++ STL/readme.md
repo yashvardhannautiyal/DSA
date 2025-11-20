@@ -158,9 +158,16 @@ Functions : `begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()
 
 
 11. MULTI MAPS <br>
-// multi maps are similar to maps but they allow duplicate keys
-// implemented using balanced binary search tree (BST)
-// stores elements in sorted order of keys
+multi maps are similar to maps but they allow duplicate keys. Implemented using balanced binary search tree (BST). Stores elements in sorted order of keys <br>
+Syntax : `multimap<int, int> mp;`<br>
+Functions : `begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase(), insert(), emplace()` <br>
+
+
+12. Unordered MAPS<b>
+unordered maps are similar to maps but they do not store elements in sorted order of keys <br>
+implemented using hash tables. Complexity for insertion, deletion, search is O(1) and works on constant time on average case and O(n) in worst case <br>
+Syntax : `unordered_map<int, int> ump;` <br>
+Functions : `inset(), emplace(), begin(), end(), size(), clear(), empty(), erase()`
 
 
 

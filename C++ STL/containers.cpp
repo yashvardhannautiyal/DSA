@@ -85,8 +85,6 @@ void explainLists()
 
     ls.emplace_front(7); // {7, 5, 2, 4}
 
-    // rest same as vectors
-    // begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend()
 }
 
 // 3. DEQUE
@@ -106,8 +104,6 @@ void explainDeque()
 
     dq.pop_back(); // removes 2 -> {4,1}
 
-    // rest same as vectors
-    // begin(), end(), erase(), size(), clear(), empty(), swap(), rbegin(), rend()
 }
 
 // 4. STACK
@@ -192,8 +188,6 @@ void explainSets()
 
     st.insert(2); // {1,2} - 2 will not be inserted again as set only stores unique elements
 
-    // functions: begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()
-
     auto it = st.find(3); // returns iterator as address to the element 3
 
     auto it = st.find(6); // returns iterator as address st.end() as 6 is not present in set
@@ -256,7 +250,6 @@ void explainUnorderedSets()
 
     us.insert(2); // {1,2} - 2 will not be inserted again as unordered set only stores unique elements
 
-    // functions: begin(), end(), size(), clear(), empty(), erase()
 }
 
 // 10. MAPS
@@ -283,16 +276,11 @@ void explainMaps()
         cout << it->first << " " << it->second << endl; // prints key and value pairs
     }
 
-    // functions: begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()
 
     auto it = mpp.find(3); // returns iterator to the key 3
 }
 
 // 11. MULTI MAPS
-
-// multi maps are similar to maps but they allow duplicate keys
-// implemented using balanced binary search tree (BST)
-// stores elements in sorted order of keys
 void explainMultiMaps()
 {
 
@@ -306,14 +294,9 @@ void explainMultiMaps()
     {
         cout << it->first << " " << it->second << endl; // prints key and value pairs
     }
-
-    // functions: begin(), end(), rbegin(), rend(), size(), clear(), empty(), erase()
 }
 
 // 12. Unordered MAPS
-// unordered maps are similar to maps but they do not store elements in sorted order of keys
-// implemented using hash tables
-// complexity for insertion, deletion, search is O(1) and works on constant time on average case and O(n) in worst case
 void explainUnorderedMaps()
 {
 
@@ -327,8 +310,6 @@ void explainUnorderedMaps()
     {
         cout << it->first << " " << it->second << endl; // prints key and value pairs
     }
-
-    // functions: begin(), end(), size(), clear(), empty(), erase()
 }
 
 int main()
