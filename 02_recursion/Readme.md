@@ -1,6 +1,23 @@
 # Recursion
-Recursion refers to when a function calls itself, until a specific condition is fulfilled. <br>
+- Recursion refers to when a function calls itself, until a specific condition is fulfilled. <br>
+- Calling a function inside the function itself -> Recursive function
 
 ### Base condition 
-Base condition is the condition which ensures that the recursive function breaks when the condition is fulfilled. <br>
-If there is no base condition, the function will call itself infinitely.
+- Base condition is the condition which ensures that the recursive function breaks when the condition is fulfilled. <br>
+- If there is no base condition, the function will call itself infinitely.
+- There can be single or multiple base conditions.
+
+### Stack representation
+ - The recursive call of function is stored in the stack memory. <br>
+- As the function returns the value recusively the stack stores wand waits for the completion of execution of recursive function. <br> 
+- As the recursive function returns value after meeting the final recursive function's base condition -> it pop outs the stored recursive function. <br>
+- If no base condition exists; then the stack memory waits infinitely for the completion of execution infinitely.
+
+### Recursion tree
+- simpler way to show the flow of recursion.
+- it shows the flow of recursive function from start to end.
+
+### Backtracking
+- calling recursion function before printing. (in simpler terms)
+- it starts recursion from back to the front. 
+- the execution starts from end and then to the front and then returns the value.
