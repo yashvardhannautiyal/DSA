@@ -21,3 +21,24 @@
 - calling recursion function before printing. (in simpler terms)
 - it starts recursion from back to the front. 
 - the execution starts from end and then to the front and then returns the value.
+
+
+### Head recursion
+- The recursive call happens before any processing.
+
+- That means: 
+    - First make the recursive call,
+    - Then do operations while returning.
+
+- Eg: 
+    `head(n - 1);       // Recursive call first` <br>
+    `printf("%d ", n);  // Work after returning`
+
+
+### Tail recursion
+- Processing happens first, then the recursive call.
+- That means:
+    - Do your own work,
+    - Then call the function again.
+- Eg: `printf("%d ", n);   // Work first` <br>
+`tail(n - 1);        // Recursive call after`
