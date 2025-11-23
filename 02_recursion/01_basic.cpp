@@ -9,10 +9,17 @@ using namespace std;
 // }
 
 //Q-2. Print number from 1 to n. 
-void func2(int i, int num){
-    if(i > num) return;
+// void func2(int i, int num){
+//     if(i > num) return;
+//     cout << i << endl;
+//     func2(i+1, num);
+// }
+
+//Q-3. Print number from n to 1 (reverse order)
+void func3(int i, int num){
+    if(i<1) return;
     cout << i << endl;
-    func2(i+1, num);
+    func3(i-1, num);
 }
 
 int main(){
@@ -23,10 +30,16 @@ int main(){
     // func(1, times);
 
     //A-2.
+    // int num;
+    // cout << "Enter the last number you want to print : ";
+    // cin >> num;
+    // func2(1, num);
+
+    //A-3. 
     int num;
-    cout << "Enter the last number you want to print : ";
+    cout << "Enter number : ";
     cin >> num;
-    func2(1, num);
+    func3(num, num);
     
     return 0;
 }

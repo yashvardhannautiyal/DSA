@@ -17,12 +17,6 @@
 - simpler way to show the flow of recursion.
 - it shows the flow of recursive function from start to end.
 
-### Backtracking
-- calling recursion function before printing. (in simpler terms)
-- it starts recursion from back to the front. 
-- the execution starts from end and then to the front and then returns the value.
-
-
 ### Head recursion
 - The recursive call happens before any processing.
 
@@ -42,3 +36,19 @@
     - Then call the function again.
 - Eg: `printf("%d ", n);   // Work first` <br>
 `tail(n - 1);        // Recursive call after`
+
+
+### Backtracking
+- Backtracking in recursion is a technique where recursion is used to try all possible options, and whenever a chosen path fails, the function returns (backtracks) to the previous step and tries a different option.
+
+- It is a combination of:
+    - Recursive exploration
+    - Undoing the previous step if it doesn’t lead to a valid solution
+
+- How Backtracking Works in Recursion
+
+    - Make a choice
+    - Call the recursive function
+    - If the current path becomes invalid:
+        - Undo the last change (backtrack)
+        - Try the next choice
