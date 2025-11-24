@@ -52,3 +52,7 @@
     - If the current path becomes invalid:
         - Undo the last change (backtrack)
         - Try the next choice
+
+### Parameterized Recursion
+- In parameterized recursion, we pass the result as a parameter, and the function does not return anything.<br>
+- The answer is built using parameters and printed (or used) when base case is hit.
