@@ -56,3 +56,6 @@
 ### Parameterized Recursion
 - In parameterized recursion, we pass the result as a parameter, and the function does not return anything.<br>
 - The answer is built using parameters and printed (or used) when base case is hit.
+
+### Functional recursion
+- Functional Recursion is a type of recursion where the recursive function returns a value, and that return value is used to build the final answer.
