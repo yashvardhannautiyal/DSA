@@ -35,7 +35,5 @@ public class _05_reverse_array{
         for (int i = 0; i < n; i++) {
             System.err.print(arr[i] + " ");
         }
-
-        sc.close();
     }
 }
