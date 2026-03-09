@@ -18,3 +18,14 @@ example : arr[i] % 4 | arr[i] + 1 | etc.
 - globally : `arr[10^7]` size can be declared
 
 - but if for example size `arr[10^10]` is given it will throw `segmentation fault` error
+
+
+### Character hashing
+
+#### ASCII values
+- Americal Standard Code for Information and Interchange
+
+- ASCII codes are used to represent alphanumeric data
+
+- uppercase (A-Z) = 65 - 90
+- loewrcase (a-z) = 97 - 122
