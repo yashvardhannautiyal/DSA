@@ -41,3 +41,8 @@ Syntax:
         // Create a TreeMap of Strings (keys) and Integers
         // (values)
         TreeMap<String, Integer> tm = new TreeMap<>();
+
+## Collision
+- Internal collision happens when number of times a value is searched and goes to one place; i.e, all keys end up at same hash index
+- this leads to worst case
+- to avoid this we use chaining method using LinkedHashMap

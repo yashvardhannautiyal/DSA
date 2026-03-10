@@ -1,10 +1,10 @@
-//unordered map
-// TC = o(n) - best, worst, average
-
-import java.util.HashMap;
+//ordered map
+// TC = o(1) - best, average
+// o(n) - worst case (rarely happens because of internal collision) 
 import java.util.Scanner;
+import java.util.TreeMap;
 
-public class HashMap0{
+public class TreeMap0{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class HashMap0{
         }
 
         //pre-compute
-        HashMap<Integer, Integer> hm = new HashMap<>();
+        TreeMap<Integer, Integer> hm = new TreeMap<>();
         for(int i=0; i<n; i++){
            if(hm.containsKey(arr[i])){
             hm.put(arr[i], hm.get(arr[i]) + 1);
@@ -28,7 +28,7 @@ public class HashMap0{
            }
         }
 
-        System.out.print("Enter number of elements to search in hashmap");
+        System.out.print("Enter number of elements to search in hashmap : ");
         int q = sc.nextInt();
 
         while(q-- > 0){
@@ -40,19 +40,3 @@ public class HashMap0{
         }
     }
 }
-
-
-// output 
-// Enter number of elements in array : 5
-// Enter 5 elments in array : 1
-// 2
-// 3
-// 4
-// 5
-// Enter number of elements to search in hashmap3
-// Enter number : 5
-// 5 -> 1
-// Enter number : 6
-// 6 -> 0
-// Enter number : 9
-// 9 -> 0
