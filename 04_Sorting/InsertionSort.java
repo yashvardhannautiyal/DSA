@@ -1,4 +1,6 @@
-
+// TC 
+// Average + Worst case ->  n*(n+1)/2 = o(n^2)
+// Best case o(n); if the array is already sorted
 import java.util.Scanner;
 
 public class InsertionSort{

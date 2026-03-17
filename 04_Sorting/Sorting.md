@@ -30,3 +30,9 @@
 ## Take an element and place in it's correct order
 - Insertion sort works by iteratively inserting element of an unsorted list into its correct position in a sorted position of the list.
 - It is like sorting playing cards in your hands. You split the cards into two groups: the sorted cards and the unsorted cards. Then, you pick a card from the unsorted group and put it in the right place in the sorted group.
+
+## Merge Sort
+### Divide and merge
+- Other sorting TC = O(n^2); Merge sort takes better TC and much optimized.
+- It follows divide and conquer approach.
+- It works by recursively dividing the input array into two halves, recursively sorting two halves and finally merging them back together to obtain the sorted array.
