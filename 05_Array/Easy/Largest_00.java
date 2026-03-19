@@ -9,7 +9,7 @@ public class Largest_00 {
     //SC = O(1)
     public static int Brute(int[] arr, int n) {
         //selection sort
-        for (int i = 0; i <= n - 2; i++) {
+        for (int i = 0; i <= n - 1; i++) {
             int mini = i;
 
             for (int j = i; j <= n - 1; j++) {
